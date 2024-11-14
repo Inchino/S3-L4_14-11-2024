@@ -1,0 +1,14 @@
+#tombola{
+    width: 1230px;
+}
+
+#tombola div{
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    border: 1px solid black;
+}
+
+.estratto {
+    background-color: red;;
+}
