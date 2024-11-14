@@ -14,12 +14,12 @@ btnEstraction.addEventListener("click", function estrazione() {
   //estrazione numero
   number = Math.floor(Math.random() * 90) + 1;
 
-  //controllo numero estratto
-  if(!controllo(number)) return;
-
   //array estrazione
   numberArray(number);
   console.log(numberEstract);
+
+  //controllo numero estratto
+  if(!controllo(number)) return;
 
   //colorazione celle
   const celle = document.querySelectorAll("#tombola div");
@@ -39,7 +39,8 @@ function visualNumber(e) {
 
 function controllo(e) {
   for (let i = 0; i < numberEstract.length; i++) {
-    if (e === numberEstract[i]) {
+    if (numberEstract[i] == e) {
+        alert('Ripetizione!');
         return false;
     }else{
         return true;
